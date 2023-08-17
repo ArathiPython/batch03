@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
     path('app1/',include('app1.urls')),
+    path('newpage/',views.newpage)
    
 ]
 if settings.DEBUG:
