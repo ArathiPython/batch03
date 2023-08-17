@@ -100,4 +100,4 @@ class authlog(APIView):
           response["DATA"]=d
           return success_response(response)    
 def newpage(request):
-          return render(request,'newpage.html')
+          return render(request,'new.html')
