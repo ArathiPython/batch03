@@ -8,9 +8,11 @@ urlpatterns = [
    path('api-auth/', include('rest_framework.urls')),
    path('createAccount',views.createAccount.as_view(),name='create_data'),
    path('authlog',views.authlog.as_view(),name='authlog'),
+   
   
 
 ]
+
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
