@@ -99,3 +99,5 @@ class authlog(APIView):
           response["statusMessage"]='successfully done'
           response["DATA"]=d
           return success_response(response)    
+def newpage(request):
+          return render(request,'newpage.html')
